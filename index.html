@@ -5,7 +5,7 @@
 <title>Document</title>
 <link rel="stylesheet" href="todolist.css">
 <!-- Hotjar Tracking Code for https://anirudhdmenon.github.io/To-Do-List-2023/ -->
-<script>
+<!--<script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:3327093,hjsv:6};
@@ -14,6 +14,28 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>-->
+<section class="stage">
+  <figure class="artImage" id="artImageId"><span class="shadow"></span></figure>
+<p>Test</p>
+<script>
+    var cookie = document.cookie;
+    if(cookie!= null && cookie!=undefined){
+      if(cookie.length>0){
+        var cookies = cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) =>({ ...accumulator, [key.trim()]: decodeURIComponent(value) }),{});
+        var seenCount= cookies.visit;
+
+        //Not first time visit!!
+        seenCount++;
+        //Then save the cookie again
+        document.cookie = "visit="+seenCount+";";
+      }
+    }
+    else{
+    //Treat as first time visit
+      document.cookie = "visit=1;";
+    }
+    //document.getElementsByClassName('demo').innerHTML='Visitinf for'+seenCount+'time';
 </script>
 </head>
 <body>
@@ -39,7 +61,8 @@
   How is the Website? Please submit your feedback <a href="tdlfeedback.html">HERE!</a>
 </div>
 <footer>
-  <p>&copy; Jan2023 - anirudhdmenon.</p>
+  <p>&copy; Jan2023 - anirudhdmenon</p>
+  <p class="demo"></p>
 </footer>
 
 <script src="todolist.js"></script>
