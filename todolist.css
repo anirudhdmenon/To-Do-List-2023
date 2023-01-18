@@ -109,3 +109,18 @@ body {
   .addBtn:hover {
     background-color: #bbb;
   }
+
+  .feedback{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-right: 50px ;
+    text-align:  right;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 85%;
+    color: #9e998d;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
