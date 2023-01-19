@@ -40,15 +40,15 @@ function newElement() {
   }
   /*
   var i=1;
-function newElement() {
-    var x = document.getElementById("myInput").value;
-    if(x==="") {
-      alert("You must write something!");
-    } else{
-      document.getElementById("myUL").innerHTML +="<li>"+x+"</li>";
-      i++;
-    }
-*/
+  function newElement() {
+      var x = document.getElementById("myInput").value;
+      if(x==="") {
+        alert("You must write something!");
+      } else{
+        document.getElementById("myUL").innerHTML +="<li>"+x+"</li>";
+        i++;
+      }
+  */
   document.getElementById("myInput").value = "";
 
   var span = document.createElement("SPAN");
@@ -81,6 +81,6 @@ function newElement() {
     //Treat as first time visit
       document.cookie = "click=1;";
     }
-    //document.getElementsById("clicks").innerHTML = "button clicked "+click+" times."
-    alert("button clicked "+seenCount+" times.");
+    document.getElementsById("clicks").innerHTML = "button clicked "+seenCount+" times."
+    //alert("button clicked "+seenCount+" times.");
 }
