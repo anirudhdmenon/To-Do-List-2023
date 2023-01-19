@@ -82,4 +82,5 @@ function newElement() {
       document.cookie = "click=1;";
     }
     document.getElementsById("clicks").innerHTML = 'button clicked '+click+' times.';
+    alert(click);
 }
