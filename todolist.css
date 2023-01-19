@@ -92,6 +92,13 @@ body {
   label{
     font-size: large;
   }
+  #clicks{
+    float: inline-end;
+    color: #48494a;
+    margin-right: 20%;
+    margin-left: auto;
+    text-align: right;
+  }
   
   .video{
     margin-top: 30px;
