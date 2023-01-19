@@ -81,6 +81,6 @@ function newElement() {
     //Treat as first time visit
       document.cookie = "click=1;";
     }
-    document.getElementsById("clicks").innerHTML = "button clicked "+click+" times."
-    alert(click)
+    //document.getElementsById("clicks").innerHTML = "button clicked "+click+" times."
+    alert("button clicked "+click+" times.");
 }
