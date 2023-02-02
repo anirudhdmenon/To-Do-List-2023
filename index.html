@@ -13,7 +13,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-YKV5TF31ZD');
-  document.cookie = "click=0;";
 </script>
 <script>
     (function(h,o,t,j,a,r){
@@ -25,7 +24,7 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<!--
+
 <script>
     var cookie = document.cookie;
     if(cookie!= null && cookie!=undefined){
@@ -41,14 +40,13 @@
     }
     else{
     //Treat as first time visit
-      document.cookie = "visit=1;";
+      document.cookie = "visit=1; expires=Thu, 28 Dec 2023 12:00:00 UTC";
     }
     document.cookie = "click=0;";
     //document.getElementsByClassName('demo').innerHTML='Visitinf for'+seenCount+'time';
     alert("you have visited the website "+seenCount+" time(s).")
 
 </script>
--->
 </head>
 <body>
 <div id="myDIV" class="header">
