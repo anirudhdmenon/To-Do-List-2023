@@ -48,7 +48,7 @@
     }
     document.cookie = "click=0;";
     //document.getElementsByClassName('demo').innerHTML='Visitinf for'+seenCount+'time';
-    alert("you have visited the website "+seenCount+" time(s).")
+    document.getElementById("visitno").innerHTML = "visited website "+seenCount+" times."
 
 </script>
 </head>
@@ -80,6 +80,7 @@
 
 <div class="feedback">
   How is the Website? Please submit your feedback <a href="tdlfeedback.html">HERE!</a>
+  <div id="visitno"></div>
 </div>
 <footer>
   <p>&copy; Jan2023 - anirudhdmenon</p>
