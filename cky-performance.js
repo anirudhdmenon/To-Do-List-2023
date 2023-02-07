@@ -16,7 +16,7 @@ var cookie = document.cookie;
     }
     document.cookie = "click=0;";
     //document.getElementsByClassName('demo').innerHTML='Visitinf for'+seenCount+'time';
-    document.getElementById("visitno").innerHTML = "visited website "+seenCount+" times."
+    //document.getElementById("visitno").innerHTML = "visited website "+seenCount+" times."
 
 
 
@@ -36,5 +36,5 @@ else{
   //Treat as first time visit
   document.cookie = "click=1;";
 }
-document.getElementById("clicks").innerHTML = "button clicked "+seenCount+" times."
+//document.getElementById("clicks").innerHTML = "button clicked "+seenCount+" times."
 //alert("button clicked "+seenCount+" times.");
