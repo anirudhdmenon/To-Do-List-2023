@@ -39,25 +39,12 @@ function newElement() {
   else {
     document.getElementById("myUL").appendChild(li);
   }
-  /*
-  var i=1;
-  function newElement() {
-      var x = document.getElementById("myInput").value;
-      if(x==="") {
-        alert("You must write something!");
-      } else{
-        document.getElementById("myUL").innerHTML +="<li>"+x+"</li>";
-        i++;
-      }
-  */
   document.getElementById("myInput").value = "";
-
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
-
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
