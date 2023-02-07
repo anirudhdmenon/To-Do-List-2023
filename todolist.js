@@ -35,7 +35,8 @@ function newElement() {
   li.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
-  } else {
+  } 
+  else {
     document.getElementById("myUL").appendChild(li);
   }
   /*
